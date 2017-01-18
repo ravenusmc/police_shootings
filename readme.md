@@ -1,4 +1,4 @@
-# Police Shootins
+# Police Shootings
 ## Intro
 
 First, I pulled this dataset from Kaggle at the following web address:
