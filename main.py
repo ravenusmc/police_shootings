@@ -5,6 +5,7 @@ import numpy as np
 #importing all files that will be used in this program.
 from valid import *
 from support import *
+from data import *
 
 ####### Main Program functions here. #########
 
@@ -25,7 +26,7 @@ def main():
         print('That was not an acceptable choice')
         choice = int(input('What is your choice? '))
     if choice == 1:
-        start()
+        start(support)
     elif choice == 2:
         support.information()
         choice = support.menu()
@@ -36,8 +37,20 @@ def main():
     elif choice == 3:
         support.quit()
 
-def start():
+#This function will allow the user to choose what they want to do.
+def start(support):
     print('\033c')
+    #Creating the object which will contain all of the data from the CSV file.
+    data = Data()
+    print('1. Look at death by state')
+    print('2. Quit')
+    choice = int(input('What is your choice? '))
+    if choice == 1:
+        data.death_by_state()
+        start(support)
+    elif choice == 2:
+        support.quit()
+
 
 
 
