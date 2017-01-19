@@ -42,13 +42,17 @@ def start(support):
     print('\033c')
     #Creating the object which will contain all of the data from the CSV file.
     data = Data()
-    print('1. Look at death by state')
-    print('2. Quit')
+    print('1. Look at total U.S. deaths')
+    print('2. Look at death by state')
+    print('3. Quit')
     choice = int(input('What is your choice? '))
     if choice == 1:
-        data.death_by_state()
+        data.total_police_deaths()
         start(support)
     elif choice == 2:
+        data.death_by_state()
+        start(support)
+    elif choice == 3:
         support.quit()
 
 

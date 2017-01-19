@@ -18,6 +18,35 @@ class Data():
     def show(self):
         return self.__data
 
+    #This method will show the total amount of people killed by police in the
+    #United States.
+    def total_police_deaths(self):
+        print('\033c')
+        self.__total_deaths = len(self.__data)
+        self.__black = self.__data[self.__data.race == 'B']
+        self.__white = self.__data[self.__data.race == 'W']
+        self.__black_count = len(self.__black)
+        self.__white_count = len(self.__white)
+        print('The total police shootings, from January of 2015 to Decembr of 2016,')
+        print('is the following:', self.__total_deaths)
+        print()
+        input('Press enter to see data broken down by race ')
+        print()
+        print(self.__black_count, 'Out of a total of', self.__total_deaths, 'people were black')
+        print(self.__white_count, 'Out of a total of', self.__total_deaths, 'people were white')
+        print()
+        self.__black = self.__data[(self.__data.armed == 'unarmed')  & (self.__data.race == 'B')]
+        self.__white = self.__data[(self.__data.armed == 'unarmed') & (self.__data.armed == 'W')]
+        self.__unarmed_count_black = len(self.__black)
+        self.__unarmed_count_white = len(self.__white)
+        print()
+        input('Press enter to see data broken down by armed and unarmed ')
+        print()
+        print(self.__unarmed_count_black, 'Out of', self.__black_count, 'blacks were unarmed.')
+        print(self.__unarmed_count_white, 'Out of', self.__white_count, 'whites were unarmed.')
+        print()
+        input('Press Enter to continue ')
+
     #This method will allow the user to look at number of police deaths by
     #state
     def death_by_state(self):

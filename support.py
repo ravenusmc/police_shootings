@@ -11,8 +11,10 @@ class Support():
     def quit(self):
         print('\033c')
         print()
-        print('Sorry to see you go!')
-        print('Please come back soon!')
+        print('\t~~~~~~~~~~~~~~~~~~~~~~~~')
+        print('\tSorry to see you go!')
+        print('\tPlease come back soon!')
+        print('\t~~~~~~~~~~~~~~~~~~~~~~~~')
         print()
 
     #This method will allow the user to go back to the main menu in the program
