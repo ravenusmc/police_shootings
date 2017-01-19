@@ -27,31 +27,18 @@ def main():
     if choice == 1:
         start()
     elif choice == 2:
-        information(support)
+        support.information()
+        choice = support.menu()
+        if choice == 1:
+            main()
+        elif choice == 2:
+            support.quit()
     elif choice == 3:
         support.quit()
 
 def start():
     print('\033c')
 
-
-def information(support):
-    print('\033c')
-    print('''
-    This project has two main purposes. The first to improve my skills using
-    Pandas for Data Science projects. The second is that I am fascinated with
-    social issues. (I have a history/political science background.) Thus,
-    this project I may be able to learn about a social issue a little bit
-    more as I improve my coding skills. If the user has questions or feedback
-    please contact me on Github at https://github.com/ravenusmc. Thank you
-    for taking the time to look at this project.
-    ''')
-    input('Press enter to continue ')
-    choice = support.menu()
-    if choice == 1:
-        main()
-    elif choice == 2:
-        support.quit()
 
 
 
