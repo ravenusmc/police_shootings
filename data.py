@@ -64,6 +64,6 @@ class Data():
         print(state, 'has', count, 'people dead by police shootings')
         print(black_count, 'Out of a total of', count, 'people were black')
         print(white_count, 'Out of a total of', count, 'people were white')
-        print('The rest of the people were from different groups.')
+        print('The rest of the people are from different groups.')
         print()
         input('Press enter to continue')

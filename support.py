@@ -42,3 +42,15 @@ class Support():
         Thank you for taking the time to look at this project.
         ''')
         input('Press enter to continue ')
+
+    #This method will show the user some of the conclusions that I have drawn
+    #from this project.
+    def conclusion(self):
+        print('\033c')
+        print('''
+            When I originally started to learn about Pandas and look at a
+        project to do I found a data set about police shootings. There was
+        a lot of data and I felt that I did not have the skills to work
+        on it at the time. I then 
+        ''')
+        input('Press enter to continue ')
