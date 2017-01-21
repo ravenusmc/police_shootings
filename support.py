@@ -92,6 +92,9 @@ class Support():
         print('\033c')
         print('''
             The biggest observation that I first made was that more whites are
-        in fact killed by the police. 
+        in fact killed by the police. However, that is the first simpler
+        observation. As I continued to write code, I decided to look out how
+        many people were shoot while unarmed. For blacks, that number was 55.
+        For whites, the number was 0. I was shocked when I saw those numbers.
         ''')
         input('Press enter to continue ')
