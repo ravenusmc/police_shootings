@@ -86,11 +86,12 @@ class Support():
         police should always be gaining the trust of the population they are
         meant to serve and protect. The moment that lethal force is used the
         police will start losing trust in the community. At this point, I will
-        stop my reflection here and dive into the data. 
+        stop my reflection here and dive into the data.
         ''')
         input('Press enter to continue to read ')
         print('\033c')
         print('''
-
+            The biggest observation that I first made was that more whites are
+        in fact killed by the police. 
         ''')
         input('Press enter to continue ')
