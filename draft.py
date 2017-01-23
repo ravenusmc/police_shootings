@@ -33,17 +33,34 @@ while start < 1948:
     start += 1
     prev_start += 1
 
-
 # print(dates[1])
 # previous_date = datetime.strptime(data.iat[0, 2], "%Y-%m-%d")
 # print(previous_date)
 
+# print(datetime.strptime(data.iat[8, 2], "%Y-%m-%d"))
 #This code gets me the count at the specific location that I enter.
 # print(dates.count(dates[2]))
 values = Counter(dates)
-od = collections.OrderedDict(sorted(values.items()))
-#length of od is 355
-print(od)
+sorted_values = collections.OrderedDict(sorted(values.items()))
+#length of sorted_values is 355
+# print(sorted_values)
+
+# test = datetime.strptime(data.iat[12, 2], "%Y-%m-%d")
+# if test in sorted_values.keys():
+#     print(sorted_values[test])
+dates = []
+deaths = []
+for item in sorted_values:
+    dates.append(item)
+    deaths.append(sorted_values[item])
+
+fig = plt.figure(dpi=128, figsize=(10,6))
+plt.plot(dates, deaths, linewidth=2, c="red")
+plt.title("Deaths", fontsize=24)
+plt.xlabel('Date', fontsize=16)
+fig.autofmt_xdate()
+plt.ylabel("Deaths", fontsize=16)
+plt.show()
 
 # date_count = 1
 # previous = 0
@@ -71,16 +88,6 @@ print(od)
 #         container.append(search_count)
 # print(container)
 
-
-
-
-# fig = plt.figure(dpi=128, figsize=(10,6))
-# plt.plot(dates, black_deaths, linewidth=2, c="red")
-# plt.title("Deaths", fontsize=24)
-# plt.xlabel('Date', fontsize=16)
-# fig.autofmt_xdate()
-# plt.ylabel("Deaths", fontsize=16)
-# plt.show()
 
 
 
