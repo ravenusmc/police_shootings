@@ -44,7 +44,8 @@ class Support():
         input('Press enter to continue ')
 
     #This method will show the user some of the conclusions that I have drawn
-    #from this project.
+    #from this project. I really should have called a file for this method.
+    #This, I believe, is not the way to do things in a project!
     def conclusion(self):
         print('\033c')
         print('''
