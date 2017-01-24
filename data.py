@@ -1,6 +1,11 @@
 #importing all libraries which will be used.
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+from datetime import datetime
+from collections import Counter
+import operator
+import collections
 
 #importing validation file
 from valid import *
@@ -67,3 +72,35 @@ class Data():
         print('The rest of the people are from different groups.')
         print()
         input('Press enter to continue')
+
+    #This method will show a graph of african american deaths by police.
+    def graph_deaths_african_american(self):
+        print('\033c')
+        print('A graph will appear showing you deaths of African Americans')
+        print('by the police.')
+        print()
+        print('Once you are done looking at the graph, it must be closed to move on')
+        input('Press Enter to continue')
+        #Here I am setting
+        dates = []
+        start = 0
+        while start < len(self.__data):
+            date = datetime.strptime(self.__data.iat[start, 2], "%Y-%m-%d")
+            race = self.__data.iat[start, 7]
+            if race == 'B':
+                dates.append(date)
+            start += 1
+        number_deaths = Counter(dates)
+        sorted_values = collections.OrderedDict(sorted(number_deaths.items()))
+        dates = []
+        deaths = []
+        for item in sorted_values:
+            dates.append(item)
+            deaths.append(sorted_values[item])
+        fig = plt.figure(dpi=128, figsize=(10,6))
+        plt.plot(dates, deaths, linewidth=2, c="red")
+        plt.title("African American Deaths from Police", fontsize=24)
+        plt.xlabel('Date', fontsize=16)
+        fig.autofmt_xdate()
+        plt.ylabel("Deaths", fontsize=16)
+        plt.show()
