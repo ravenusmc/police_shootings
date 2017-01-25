@@ -45,8 +45,9 @@ def start(support):
     print('1. Look at total U.S. deaths')
     print('2. Look at death by state')
     print('3. Look at graph of African American deaths')
-    print('4. Conclusion')
-    print('5. Quit')
+    print('4. Look at graph of caucasian deaths')
+    print('5. Conclusion')
+    print('6. Quit')
     choice = int(input('What is your choice? '))
     if choice == 1:
         data.total_police_deaths()
@@ -58,9 +59,12 @@ def start(support):
         data.graph_deaths_african_american()
         start(support)
     elif choice == 4:
-        support.conclusion()
+        data.graph_deaths_caucasian()
         start(support)
     elif choice == 5:
+        support.conclusion()
+        start(support)
+    elif choice == 6:
         support.quit()
 
 

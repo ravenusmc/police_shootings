@@ -130,3 +130,60 @@ class Data():
         mean = total / len(deaths)
         print('The average deaths per day is the following', mean)
         input('Press Enter to continue to return to main menu ')
+
+    def graph_deaths_caucasian(self):
+        print('\033c')
+        print('A graph will appear showing you deaths of Caucasian')
+        print('by the police.')
+        print()
+        print('Once you are done looking at the graph, it must be closed to move on')
+        input('Press Enter to continue')
+        #Here I am setting up a list to hold all of the dates.
+        dates = []
+        #This start variable will act as a counter for the while loop.
+        start = 0
+        #The loop will start at 0 and go for the length of the data.
+        while start < len(self.__data):
+            #Here I am setting up the date variable to get a specific date
+            date = datetime.strptime(self.__data.iat[start, 2], "%Y-%m-%d")
+            race = self.__data.iat[start, 7]
+            if race == 'W':
+                #I want to only look at the dates where African Americans were
+                #killed so I append those dates to the dates list.
+                dates.append(date)
+            #The start counter is increased by one for each cycle of the loop.
+            start += 1
+        #This code here will create a dictionary, named number_deaths. The
+        #counter method is used to count the number of times each date appears.
+        #I need to do this because the dates list may have numerous dates in it
+        #for the same date. That will tell me that multiple people died on the
+        #same date.
+        number_deaths = Counter(dates)
+        #The number_deaths dictionary is not sorted so the below line will
+        #sort the information into the sorted_values dictionary.
+        sorted_values = collections.OrderedDict(sorted(number_deaths.items()))
+        #I then create two new lists which will have the information from the
+        #sorted_values dictionary placed into these two lists.
+        dates = []
+        deaths = []
+        #I use a for loop to loop through all of the entries in the sorted_values
+        #dictionary.
+        for item in sorted_values:
+            dates.append(item)
+            deaths.append(sorted_values[item])
+        #The below lines of code is what will actually create the graph.
+        fig = plt.figure(dpi=128, figsize=(10,6))
+        plt.plot(dates, deaths, linewidth=2, c="red")
+        plt.title("Caucasian Deaths from Police", fontsize=24)
+        plt.xlabel('Date', fontsize=16)
+        fig.autofmt_xdate()
+        plt.ylabel("Deaths", fontsize=16)
+        plt.show()
+        print()
+        #The following lines of code get the mean for the data and then I display
+        #that mean.
+        total = sum(deaths)
+        print(len(deaths))
+        mean = total / len(deaths)
+        print('The average deaths per day is the following', mean)
+        input('Press Enter to continue to return to main menu ')
