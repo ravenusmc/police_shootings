@@ -41,7 +41,7 @@ class Data():
         print(self.__white_count, 'Out of a total of', self.__total_deaths, 'people were white')
         print()
         self.__black = self.__data[(self.__data.armed == 'unarmed')  & (self.__data.race == 'B')]
-        self.__white = self.__data[(self.__data.armed == 'unarmed') & (self.__data.armed == 'W')]
+        self.__white = self.__data[(self.__data.armed == 'unarmed') & (self.__data.race == 'W')]
         self.__unarmed_count_black = len(self.__black)
         self.__unarmed_count_white = len(self.__white)
         print()
