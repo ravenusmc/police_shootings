@@ -20,6 +20,7 @@ def main():
     print('1. Use program')
     print('2. Information')
     print('3. Quit')
+    print()
     support = Support()
     choice = int(input('What is your choice? '))
     while not three_valid(choice):
@@ -43,11 +44,12 @@ def start(support):
     #Creating the object which will contain all of the data from the CSV file.
     data = Data()
     print('1. Look at total U.S. deaths')
-    print('2. Look at death by state')
-    print('3. Look at graph of African American deaths')
-    print('4. Look at graph of caucasian deaths')
-    print('5. Conclusion')
-    print('6. Quit')
+    print('2. Look at deaths by state')
+    print('3. Look at threat level data')
+    print('4. Look at graph of African American deaths')
+    print('5. Look at graph of caucasian deaths')
+    print('6. Conclusions')
+    print('7. Quit')
     choice = int(input('What is your choice? '))
     if choice == 1:
         data.total_police_deaths()
@@ -56,16 +58,30 @@ def start(support):
         data.death_by_state()
         start(support)
     elif choice == 3:
+        threat_level(data, support)
+    elif choice == 4:
         data.graph_deaths_african_american()
         start(support)
-    elif choice == 4:
+    elif choice == 5:
         data.graph_deaths_caucasian()
         start(support)
-    elif choice == 5:
+    elif choice == 6:
         support.conclusion()
         start(support)
-    elif choice == 6:
+    elif choice == 7:
         support.quit()
+
+def threat_level(data, support):
+    print('\033c')
+    print('This section will allow you to look at various factors of threat level')
+    print('In this case, threat level, means if the individual was attacking')
+    print('1. All Data looking at threat level')
+    print('2. Data looking at threat level and African Americans')
+    print('3. Data looking at threat level and Caucasian')
+    choice = int(input('What is your choice? '))
+    if choice == 1:
+        data.all_threat()
+        start(support)
 
 
 main()

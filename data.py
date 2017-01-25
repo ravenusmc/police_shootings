@@ -131,6 +131,7 @@ class Data():
         print('The average deaths per day is the following', mean)
         input('Press Enter to continue to return to main menu ')
 
+    #This method will show a graph of caucasian deaths by police.
     def graph_deaths_caucasian(self):
         print('\033c')
         print('A graph will appear showing you deaths of Caucasian')
@@ -187,3 +188,13 @@ class Data():
         mean = total / len(deaths)
         print('The average deaths per day is the following', mean)
         input('Press Enter to continue to return to main menu ')
+
+    #This method will allow the user to see the data for where the indiviudal
+    #was attacking the police.
+    def all_threat(self):
+        print('\033c')
+        total = len(self.__data)
+        self.__data = self.__data[self.__data.threat_level == 'attack']
+        total_attacking = len(self.__data)
+        print(total_attacking, 'individuals out of', total, 'were attacking the police')
+        input('Enter to continue!!!!')
