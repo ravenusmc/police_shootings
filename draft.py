@@ -7,10 +7,6 @@ import operator
 import collections
 
 
-#I have an error somewhere in my data so I am trying to find it. I am going through the 
-#total_police_deaths method to find it.
-
-
 data = pd.read_csv('database.csv')
 
 
