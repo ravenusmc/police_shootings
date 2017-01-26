@@ -30,27 +30,59 @@ class Data():
         self.__total_deaths = len(self.__data)
         self.__black = self.__data[self.__data.race == 'B']
         self.__white = self.__data[self.__data.race == 'W']
+        self.__asian = self.__data[self.__data.race == 'A']
+        self.__Hispanic = self.__data[self.__data.race == 'H']
+        self.__other = self.__data[self.__data.race == 'O']
         self.__black_count = len(self.__black)
         self.__white_count = len(self.__white)
+        self.__asian_count = len(self.__asian)
+        self.__hispanic_count = len(self.__Hispanic)
+        self.__other_count = len(self.__other)
         print('The total police shootings, from January of 2015 to Decembr of 2016,')
         print('is the following:', self.__total_deaths)
         print()
         input('Press enter to see data broken down by race ')
         print()
-        print(self.__black_count, 'Out of a total of', self.__total_deaths, 'people were black')
+        print(self.__black_count, 'Out of a total of', self.__total_deaths, 'people were African American')
         print(self.__white_count, 'Out of a total of', self.__total_deaths, 'people were white')
+        print(self.__asian_count, 'Out of a total of', self.__total_deaths, 'people were asian')
+        print(self.__hispanic_count, 'Out of a total of', self.__total_deaths, 'people were Hispanic')
+        print(self.__other_count, 'Out of a total of', self.__total_deaths, 'people were other')
+        print('The rest of the people were unknown')
         print()
         self.__black = self.__data[(self.__data.armed == 'unarmed')  & (self.__data.race == 'B')]
         self.__white = self.__data[(self.__data.armed == 'unarmed') & (self.__data.race == 'W')]
+        self.__asian = self.__data[(self.__data.armed == 'unarmed') & (self.__data.race == 'A')]
+        self.__Hispanic = self.__data[(self.__data.armed == 'unarmed') & (self.__data.race == 'H')]
+        self.__other = self.__data[(self.__data.armed == 'unarmed') & (self.__data.race == 'O')]
         self.__unarmed_count_black = len(self.__black)
         self.__unarmed_count_white = len(self.__white)
+        self.__unarmed_count_asian = len(self.__asian)
+        self.__unarmed_count_hispanic = len(self.__Hispanic)
+        self.__unarmed_count_other = len(self.__other)
         print()
         input('Press enter to see data broken down by armed and unarmed ')
+        print('\033c')
         print()
         print(self.__unarmed_count_black, 'Out of', self.__black_count, 'blacks were unarmed.')
         print(self.__unarmed_count_white, 'Out of', self.__white_count, 'whites were unarmed.')
+        print(self.__unarmed_count_asian, 'Out of', self.__asian_count, 'asians were unarmed.')
+        print(self.__unarmed_count_hispanic, 'Out of', self.__hispanic_count, 'Hispanics were unarmed.')
+        print(self.__unarmed_count_other, 'Out of', self.__other_count, 'other were unarmed.')
         print()
         input('Press Enter to continue ')
+
+    def looking_deeper(self):
+        print('\033c')
+        print('At this point, the user will see that whites are killed the most')
+        print('when it comes to dealing with police. However, looking deeper')
+        print('into the numbers we can learn more.')
+        print('According to Google there are a little over 318 million people')
+        print('in the U.S. currently')
+        print('There are 246 million whites in the U.S. population or about 77%')
+        print('There are 46 million African Americans in the U.S. population or about 14%')
+        input('Press Enter to continue ')
+
 
     #This method will allow the user to look at number of police deaths by
     #state

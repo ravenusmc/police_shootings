@@ -79,7 +79,8 @@ class Support():
     def conclusion(self):
         print('\033c')
         print('''
-
+            Article explaining more about police shootings:
+        https://www.washingtonpost.com/news/post-nation/wp/2016/07/11/arent-more-white-people-than-black-people-killed-by-police-yes-but-no/?utm_term=.d1cd6cafca9d
         ''')
         input('Press enter to continue to read ')
         print('\033c')
@@ -89,6 +90,6 @@ class Support():
         input('Press enter to continue to read ')
         print('\033c')
         print('''
-        
+
         ''')
         input('Press enter to continue ')

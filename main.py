@@ -53,6 +53,7 @@ def start(support):
     choice = int(input('What is your choice? '))
     if choice == 1:
         data.total_police_deaths()
+        data.looking_deeper()
         start(support)
     elif choice == 2:
         data.death_by_state()
