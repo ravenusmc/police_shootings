@@ -72,15 +72,24 @@ class Data():
         print()
         input('Press Enter to continue ')
 
+    #This method will look deeper at the stats to try and explain what it going on.
     def looking_deeper(self):
         print('\033c')
-        print('At this point, the user will see that whites are killed the most')
-        print('when it comes to dealing with police. However, looking deeper')
-        print('into the numbers we can learn more.')
-        print('According to Google there are a little over 318 million people')
-        print('in the U.S. currently')
-        print('There are 246 million whites in the U.S. population or about 77%')
-        print('There are 46 million African Americans in the U.S. population or about 14%')
+        print('''
+                At this point, the user will see that whites are killed the most
+            when it comes to dealing with police. However, looking deeper into
+            the numbers we can learn more. According to Google there are a
+            little over 318 million people in the U.S. currently. There are 246
+            million whites in the U.S. population or about 77 percent of the
+            population.
+        There are 46 million African Americans in the U.S. population or about 14%''')
+        input('Press Enter to continue')
+        print('\033c')
+        print('''
+            What is interesting to point out that even though African-Americans
+            make up 14 percent of the U.S. Population they account for 25
+            percent of the deaths.
+            ''')
         input('Press Enter to continue ')
 
 
