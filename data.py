@@ -81,16 +81,20 @@ class Data():
             the numbers we can learn more. According to Google there are a
             little over 318 million people in the U.S. currently. There are 246
             million whites in the U.S. population or about 77 percent of the
-            population.
-        There are 46 million African Americans in the U.S. population or about 14%''')
+            population. There are 46 million African Americans in the U.S.
+            population or about 14 percent of the population.
+            ''')
         input('Press Enter to continue')
         print('\033c')
         print('''
-            What is interesting to point out that even though African-Americans
+                What is interesting to point out that even though African-Americans
             make up 14 percent of the U.S. Population they account for 25
-            percent of the deaths.
+            percent of the deaths. Whites, on the other hand, make up 77
+            percent of the U.S. population but only 49 percent of the deaths by
+            police. Thus, more blacks are being killed by the police than their
+            portion of the U.S. population should allow.
             ''')
-        input('Press Enter to continue ')
+        input('Press Enter to return to the main menu ')
 
 
     #This method will allow the user to look at number of police deaths by
