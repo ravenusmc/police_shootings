@@ -79,8 +79,20 @@ class Support():
     def conclusion(self):
         print('\033c')
         print('''
-            Article explaining more about police shootings:
-        https://www.washingtonpost.com/news/post-nation/wp/2016/07/11/arent-more-white-people-than-black-people-killed-by-police-yes-but-no/?utm_term=.d1cd6cafca9d
+                To start, in the readme file of this project is more resources that
+            I used to build this project. I think that one lesson that I at least
+            learned from building this project is that African Americans only
+            make up 14 percent of the U.S. population but they are 25 percent of
+            the deaths by police. This number, more than anything, tells me that
+            there are some biases due to social/economical/racial factors.
+                At this point, I will say that personally I believe that police
+            should fully know the neighborhoods they patrol. In the neighborhood
+            that I live in, there are at least two cops. However, I have never
+            spoken with them once. They should be out, walking around, talking to
+            people. Building a sense of connection between themselves and the
+            communities that they serve.
+                Finally, I want to make the point that in building this project I
+            knew that I would offend either people
         ''')
         input('Press enter to continue to read ')
         print('\033c')

@@ -17,6 +17,12 @@ interested in police shootings and would like to see how the data, for 2015, loo
 Essentially, I think that this is a good project to better my developer skills
 as well as apply my love of social issues.
 
+Furthermore, if one wants to read one article, from the Washington Post about
+the police shootings and from which I used partly as a reference for this project
+please look at the following:
+
+https://www.washingtonpost.com/news/post-nation/wp/2016/07/11/arent-more-white-people-than-black-people-killed-by-police-yes-but-no/?utm_term=.d1cd6cafca9d
+
 
 # Getting started
 ### Installing / Requirements

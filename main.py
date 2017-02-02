@@ -51,6 +51,7 @@ def start(support):
     print('5. Look at graph of caucasian deaths')
     print('6. Conclusions')
     print('7. Quit')
+    print()
     choice = int(input('What is your choice? '))
     if choice == 1:
         data.total_police_deaths()
