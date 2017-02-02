@@ -43,6 +43,7 @@ def start(support):
     print('\033c')
     #Creating the object which will contain all of the data from the CSV file.
     data = Data()
+    #Presenting options to the user on what they want to do
     print('1. Look at total U.S. deaths')
     print('2. Look at deaths by state')
     print('3. Look at threat level data')
