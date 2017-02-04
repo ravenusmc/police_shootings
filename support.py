@@ -79,29 +79,36 @@ class Support():
     def conclusion(self):
         print('\033c')
         print('''
-                To start, in the readme file of this project is more resources that
-            I used to build this project. I think that one lesson that I at least
-            learned from building this project is that African Americans only
-            make up 14 percent of the U.S. population but they are 25 percent of
-            the deaths by police. This number, more than anything, tells me that
-            there are some biases due to social/economical/racial factors.
+                To start, in the readme file of this project is more resources
+            that I used to build this project. I think that one lesson that I
+            at least learned from building this project is that African
+            Americans only make up 14 percent of the U.S. population but they
+            are 25 percent of the deaths by police. This number, more than
+            anything, tells me that there are some biases due to
+            social/economical/racial factors.
                 At this point, I will say that personally I believe that police
             should fully know the neighborhoods they patrol. In the neighborhood
             that I live in, there are at least two cops. However, I have never
-            spoken with them once. They should be out, walking around, talking to
-            people. Building a sense of connection between themselves and the
+            spoken with them once. They should be out, walking around, talking
+            to people. Building a sense of connection between themselves and the
             communities that they serve.
-                Finally, I want to make the point that in building this project I
-            knew that I would offend either people
         ''')
         input('Press enter to continue to read ')
         print('\033c')
         print('''
-
+                I want to make the point that in building this project I
+            knew that I would offend either people who support the police or
+            those who are against them. This may be the case and it is a risk
+            that I am taking. Again, the main goal of this project was to
+            continue working on my skills with Pandas.
+                The final point that I would like to make is about a thought
+            that continues to huant me. I served in Iraq, at Camp Fallujah,
+            from August of 2006 to March of 2007. I was a 1st Lt there and had a
+            platoon of roughly 40 Marines. We were told, on a daily basis, that
+            if any of my Marines fired a weapon at an Iraqi there would be an
+            investigation and depending on how that turned out, possibly
+            jail time for the Marine. Why is that in Iraq, killing an Iraqi,
+            seemed to bring upon such heavy consequences compared to a police
+            officer killing a U.S. citizen here in the U.S?
         ''')
-        input('Press enter to continue to read ')
-        print('\033c')
-        print('''
-
-        ''')
-        input('Press enter to continue ')
+        input('Press enter to continue to main menu ')
