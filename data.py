@@ -171,7 +171,6 @@ class Data():
         #The following lines of code get the mean for the data and then I display
         #that mean.
         total = sum(deaths)
-        print(len(deaths))
         mean = total / len(deaths)
         print('The average deaths per day is the following', mean)
         input('Press Enter to continue to return to main menu ')
@@ -229,7 +228,6 @@ class Data():
         #The following lines of code get the mean for the data and then I display
         #that mean.
         total = sum(deaths)
-        print(len(deaths))
         mean = total / len(deaths)
         print('The average deaths per day is the following', mean)
         input('Press Enter to continue to return to main menu ')
