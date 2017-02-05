@@ -83,6 +83,9 @@ def threat_level(data, support):
     print('2. Data looking at threat level and African Americans')
     print('3. Data looking at threat level and Caucasian')
     choice = int(input('What is your choice? '))
+    while not three_valid(choice):
+        print('That is not a valid option!')
+        choice = int(input('What is your choice? '))
     if choice == 1:
         data.all_threat()
         start(support)
@@ -92,6 +95,5 @@ def threat_level(data, support):
     elif choice == 3:
         data.all_threat_caucasion()
         start(support)
-
-
+        
 main()
