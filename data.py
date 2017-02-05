@@ -240,4 +240,19 @@ class Data():
         self.__data = self.__data[self.__data.threat_level == 'attack']
         total_attacking = len(self.__data)
         print(total_attacking, 'individuals out of', total, 'were attacking the police')
-        input('Enter to continue!!!!')
+        input('Enter to return to main menu ')
+
+    #This method will allow the user to see the data for where the indiviudal,
+    #African Americans, were attacking the police.
+    def all_threat_african_american(self):
+        print('\033c')
+        total = len(self.__data)
+        self.__data = self.__data[(self.__data.threat_level == 'attack')  & (self.__data.race == 'B')]
+        total_attacking = len(self.__data)
+        print(total_attacking, 'individuals out of', total, 'were attacking the police')
+        input('Enter to return to main menu ')
+
+    def all_threat_caucasion(self):
+        print('\033c')
+        total = len(self.__data)
+        self.__data = self.__data[(self.__data.threat_level == 'attack')  & (self.__data.race == 'W')]

@@ -74,6 +74,7 @@ def start(support):
     elif choice == 7:
         support.quit()
 
+#This method allows the user to look at threat level.
 def threat_level(data, support):
     print('\033c')
     print('This section will allow you to look at various factors of threat level')
@@ -84,6 +85,12 @@ def threat_level(data, support):
     choice = int(input('What is your choice? '))
     if choice == 1:
         data.all_threat()
+        start(support)
+    elif choice == 2:
+        data.all_threat_african_american()
+        start(support)
+    elif choice == 3:
+        data.all_threat_caucasion()
         start(support)
 
 
