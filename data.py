@@ -87,9 +87,9 @@ class Data():
         input('Press Enter to continue')
         print('\033c')
         print('''
-                What is interesting to point out that even though African-Americans
-            make up 14 percent of the U.S. Population they account for 25
-            percent of the deaths. Whites, on the other hand, make up 77
+                What is interesting to point out that even though African-
+            Americans make up 14 percent of the U.S. Population they account
+            for 25 percent of the deaths. Whites, on the other hand, make up 77
             percent of the U.S. population but only 49 percent of the deaths by
             police. Thus, more blacks are being killed by the police than their
             portion of the U.S. population should allow.
@@ -116,7 +116,7 @@ class Data():
         print(white_count, 'Out of a total of', count, 'people were white')
         print('The rest of the people are from different groups.')
         print()
-        input('Press enter to continue')
+        input('Press enter to continue ')
 
     #This method will show a graph of african american deaths by police.
     def graph_deaths_african_american(self):
@@ -125,7 +125,7 @@ class Data():
         print('by the police.')
         print()
         print('Once you are done looking at the graph, it must be closed to move on')
-        input('Press Enter to continue')
+        input('Press Enter to continue ')
         #Here I am setting up a list to hold all of the dates.
         dates = []
         #This start variable will act as a counter for the while loop.
@@ -182,7 +182,7 @@ class Data():
         print('by the police.')
         print()
         print('Once you are done looking at the graph, it must be closed to move on')
-        input('Press Enter to continue')
+        input('Press Enter to continue ')
         #Here I am setting up a list to hold all of the dates.
         dates = []
         #This start variable will act as a counter for the while loop.

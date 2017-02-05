@@ -53,6 +53,9 @@ def start(support):
     print('7. Quit')
     print()
     choice = int(input('What is your choice? '))
+    while not start_valid(choice):
+        print('That was not a valid selection!')
+        choice = int(input('What is your choice? '))
     if choice == 1:
         data.total_police_deaths()
         data.looking_deeper()
@@ -95,5 +98,5 @@ def threat_level(data, support):
     elif choice == 3:
         data.all_threat_caucasion()
         start(support)
-        
+
 main()
