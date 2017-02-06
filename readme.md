@@ -43,4 +43,5 @@ they want to look at in regards to police shootings.
 
 # Preview
 
-To see a video that talks about this project please go here: COMING SOON
+To see a video that talks about this project please go here:
+https://www.youtube.com/watch?v=Li4tHJ2Kjbs
